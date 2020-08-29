@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="../../css/main.css">
-	<link rel="stylesheet" type="text/css" href="../../css/proj_temp.css">
-		<link rel="stylesheet" type="text/css" href="build1.css">
+	<link rel="stylesheet" type="text/css" href="../../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/proj_temp.css" />
+	<link rel="stylesheet" type="text/css" href="build1.css" />
+	
 	<title>Build 1 - Data Exploration and Visualization</title>
+	
 </head>
 <body>
 
 <nav>
 	<ul>
 		<li><a href="/">Home</a></li>
-		<li><!--<a href="/about">-->About</li>
-		<li><!--<a href="/cv">-->CV</li>
-		<li><!--<a href="/blog">-->Blog</li>
+		<li class="inactive"><!--<a href="/about">-->About</li>
+		<li class="inactive"><!--<a href="/cv">-->CV</li>
+		<li class="inactive"><!--<a href="/blog">-->Blog</li>
 		<li><a href="../projects.html">Projects</a></li>				
 	</ul>
 </nav>
 
-<img src="./tea_sharing_edited.jpg" class="banner">
+<img src="./tea_sharing_edited.jpg" class="banner" />
 
 <div class="title">
 	<h1>Data Exploration and Visualization</h1>
-	<p>Speed Dating Experiment by Columbia Business School</p>
+	<h2>Speed Dating Experiment by Columbia Business School</h2>
 </div>
+
+<br />
+<br />
 
 <p>
 	Columbia Business School conducted a speed dating experiment from 2002 to 2004. The two Professors,
@@ -32,9 +37,9 @@
 </p>
 
 <p>
-	The experiment consisted of groups of males and females aged 18 to 55. Each event conducted was called a wave.
-	This made controlling the variables, such as the rating system, for further analysis on how each group of
-	participants operated within the constraints of the experiment.
+	The experiment consisted of events with mixed gender groups aged 18 to 55. Each event conducted was called a wave.
+	This allowed changing and controlling constraints, such as the rating system, for further analysis on how each group of
+	participants operated within them.
 </p>
 
 <p>
@@ -44,18 +49,12 @@
 	and unmatched couples who did not wish for future contact outside of the event. These plots are exploratory only.
 </p>
 
-<div class="plot_wrapper">
-	<img src="./matched.png" class="plot">
-	<figcaption>These are the interests of men and women who matched with someone.</figcaption>
-</div>
+<iframe src="./topic_vs_matched_plot.html" title="Topic vs Matched and Gender Exploration"></iframe>
 
 <br>
 <br>
 
-<div class="plot_wrapper">
-	<img src="./unmatched.png" class="plot">
-	<figcaption>These are the interests of men and women who did not match with anyone.</figcaption>
-</div>
+<iframe src="./topic_vs_matched_plot.html" title="Topic vs Match and Gender Exploration"></iframe>
 
 <p>
 	Upon first glance, we see there are some distinct differences in those who matched and those who did not.
@@ -70,11 +69,7 @@
 </p>
 
 
-
-<div class="plot_wrapper">
-	<img src="./age_diff_match_corr.png" class="plot">
-	<figcaption>As can be seen above, there is a direct correlation between matching and age difference.</figcaption>
-</div>
+<iframe src="./age_diff_vs_match_plot.html" title="Mean Age by Gender Plot"></iframe>
 
 <p>
 	As we explore further, it becomes apparent that couples participating in the experiment are more likely to match
@@ -82,10 +77,7 @@
 	3.6 years older than their paired female in order to maximize the chances for them to choose to match with each other.
 </p>
 
-<div class="plot_wrapper">
-	<img src="./male_vs_female_age.png" class="plot">
-	<figcaption>Couples are more likely to match if the males are older than the paired females.</figcaption>
-</div>
+<iframe src="./mean_age_by_gender_plot.html" title="Mean Age by Gender Plot"></iframe>
 
 <p>
 	This experiment exampled many differences in each gender when choosing a romantic partner. It also showed many of the 
@@ -98,10 +90,19 @@
 
 <footer>
 	<ul>
-		<li><!--<a href="mailto:james.caldwell.1981@gmail.com">-->james.caldwell.1981@gmail.com</li>
-		<li><!--<a href="https://github.com/james-caldwell1981">-->github.com/james-caldwell1981</li>
+		<li><a href="mailto:james.caldwell.1981@gmail.com">james.caldwell.1981@gmail.com</li>
+		<li><a href="https://github.com/james-caldwell1981">github.com/james-caldwell1981</li>
 	</ul>
 </footer>
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
