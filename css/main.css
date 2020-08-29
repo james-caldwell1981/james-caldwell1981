@@ -1,13 +1,13 @@
 
 html{background-color:#c7c7d6;}
 body {
-	padding:4px;
     margin: auto;
 	padding:10px 20px;
-    width: 45%;
+    width: 1000px;
 	background-color:#ebebf2;
 	margin:auto;
 }
+	.inactive{color:#ebebf2}
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
